@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ave</title>
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body>
+    <div class="window" id="window">
+      <div class="panel">
+        <p class="logotype-text" style="width: 100%; text-align: center">
+          Спасибо за заявку!
+        </p>
+        <p>
+          <br />Исходя из ваших ответов, мы подобрали для вас вариант
+          дизайн-проекта.<br /><br />
+        </p>
+        <p
+          class="logotype-text"
+          style="font-size: 36px; width: 100%; text-align: center"
+          id="servicerec"
+        >
+          Планировочное решение
+        </p>
+        <p style="color: #c6c5c3">
+          отличный дизайн-пакет,<br />
+          отвечающий всем вашим критериям<br /><br />
+        </p>
+        <p>
+          Ожидайте звонка от нашего менеджера.<br />
+          Хорошего дня!<br /><br />
+        </p>
+
+        <div
+          class="button row"
+          style="margin-bottom: 30px; width: 30%; padding: 20px"
+          onclick="closewindow()"
+        >
+          <p>Закрыть</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" id="start">
+      <div class="row indent">
+        <div class="header" style="padding-left: 0px">
+          <img
+            src="./images/logow.svg"
+            class="image-fit"
+            style="margin-left: 5%"
+            onclick="location.href='Index.html'"
+          />
+        </div>
+        <div class="header"></div>
+        <div class="header" style="padding-right: 0px">
+          <div style="margin-left: 0px">
+            <a class="effect-underline" href="Index.html#about">о студии</a>
+          </div>
+          <div>
+            <a class="effect-underline" href="./Projects.html">проекты</a>
+          </div>
+          <div>
+            <a class="effect-underline" href="Index.html#price">стоимость</a>
+          </div>
+          <div>
+            <a class="effect-underline" href="Index.html#application"
+              >этапы работы</a
+            >
+          </div>
+          <div style="margin-right: 0px">
+            <a class="effect-underline" href="Index.html#contacts">контакты</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row indent">
+        <div
+          class="image-fit"
+          style="
+            background-image: url('images/promo1.png');
+            width: 100%;
+            height: 800px;
+            position: relative;
+            margin-top: -15%;
+            z-index: -99;
+          "
+        ></div>
+        <div class="column" style="margin-top: 5%">
+          <div class="toptext">
+            <h1 style="line-height: 0">Д</h1>
+
+            <h2 style="line-height: 0; margin-top: 2%">изайн-студия</h2>
+          </div>
+          <div class="bottomtext" style="margin-right: 12.5%">
+            <h1 style="line-height: 1">a</h1>
+            <h2 style="line-height: 2.2; margin-right: -8%">v</h2>
+            <h1 style="line-height: 1">e</h1>
+          </div>
+          <div
+            class="button"
+            style="width: 50%; margin: auto auto 0 auto"
+            onclick="location.href='#application'"
+          >
+            <p>
+              Оставить заявку<br />
+              на проект
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="indent"></div>
+
+      <div class="row indent reveal" id="about">
+        <div class="column" style="margin-top: 5%">
+          <div class="toptext">
+            <h1 style="font-size: 15rem; line-height: 1; margin-right: 2%">
+              Д
+            </h1>
+
+            <h2 style="font-size: 8rem; line-height: 2; margin-top: 2%">
+              уменко
+            </h2>
+          </div>
+          <div class="bottomtext" style="margin: 0 10% 0 auto">
+            <h1 style="font-size: 15rem; line-height: 0.5">E</h1>
+            <h2 style="font-size: 8rem; line-height: 1.25">ва</h2>
+          </div>
+          <div
+            class="button"
+            style="width: 50%; margin: auto 2% 0 auto"
+            onclick="location.href='#application'"
+          >
+            <p style="padding: 5% 0">О нас</p>
+          </div>
+        </div>
+        <img src="./images/eva.png" class="image-cover" />
+      </div>
+
+      <div class="row indent reveal" id="projects">
+        <div class="column" style="padding-right: 15px">
+          <p
+            class="logotype-text"
+            style="
+              width: 100%;
+              margin: auto;
+              text-align: left;
+              margin-bottom: 0px;
+            "
+          >
+            Проекты
+          </p>
+          <div
+            class="image-cover"
+            style="
+              background-image: url('images/project1.png');
+              width: 100%;
+              height: 650px;
+            "
+          ></div>
+          <div class="row proj-mini-info">
+            <div class="column" style="margin: auto">
+              <p class="head">Квартира в клубном доме «Soho Side»</p>
+              <p class="body">
+                Лаконичный стиль с современнными нотами неоклассики
+              </p>
+            </div>
+            <div
+              class="button"
+              style="width: 70%; margin-left: 30px"
+              onclick="location.href='Projects.html'"
+            >
+              <p>Смотреть</p>
+            </div>
+          </div>
+          <div
+            class="image-cover"
+            style="
+              background-image: url('images/project3.png');
+              width: 100%;
+              height: 650px;
+            "
+          ></div>
+          <div class="row proj-mini-info">
+            <div class="column" style="margin: auto">
+              <p class="head">Жилой комплекс «River Side»</p>
+              <p class="body">Эко стиль, с элементами японского минимализма</p>
+            </div>
+            <div
+              class="button"
+              style="width: 70%; margin-left: 30px"
+              onclick="location.href='Projects.html'"
+            >
+              <p>Смотреть</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div
+            class="image-cover"
+            style="
+              background-image: url('images/project2.png');
+              width: 100%;
+              height: 650px;
+            "
+          ></div>
+          <div class="row proj-mini-info">
+            <div class="column" style="margin: auto">
+              <p class="head">Апартаменты «Lahta Plaza»</p>
+              <p class="body">Современный стиль для жизни и отдыха</p>
+            </div>
+            <div
+              class="button"
+              style="width: 70%; margin-left: 30px"
+              onclick="location.href='Projects.html'"
+            >
+              <p>Смотреть</p>
+            </div>
+          </div>
+          <div
+            class="image-cover"
+            style="
+              background-image: url('images/project4.png');
+              width: 100%;
+              height: 650px;
+            "
+          ></div>
+          <div class="row proj-mini-info">
+            <div class="column" style="margin: auto">
+              <p class="head">Жилой комплекс «Эталон»</p>
+              <p class="body">
+                Квартира в ультрасовременном и лаконичном стиле
+              </p>
+            </div>
+            <div
+              class="button"
+              style="width: 70%; margin-left: 30px"
+              onclick="location.href='Projects.html'"
+            >
+              <p>Смотреть</p>
+            </div>
+          </div>
+          <div class="button" style="width: 100%; height: 76px">
+            <div class="row" onclick="location.href='Projects.html'">
+              <p>Смотреть ещё</p>
+              <span class="the-arrow -right" style="margin: auto; width: 30%">
+                <span class="shaft"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="logotype-text reveal"
+        style="width: 100%; margin: auto; text-align: left; margin: 5% 0%"
+        id="price"
+      >
+        <h1 style="line-height: 0">С</h1>
+
+        <h2 style="line-height: 0.25; margin-left: 10%">тоимость</h2>
+      </div>
+
+      <div class="row indent reveal">
+        <div class="price-block scaler">
+          <p class="head">Планировочное решение</p>
+          <hr />
+          <p class="body">
+            <span style="color: #8c947d">➤</span> План расстановки мебели и
+            оборудования<br />(с размерами)<br />
+            <span style="color: #8c947d">➤</span> План размещения сантехники<br />
+            <span style="color: #8c947d">➤</span> План розеток, выключателей и
+            электрооборудования<br />
+            <span style="color: #8c947d">➤</span> План размещения
+            светильников<br />
+            <span style="color: #8c947d">➤</span> План включения групп света<br />
+            <span style="color: #8c947d">➤</span> План теплых полов
+          </p>
+          <div class="button nohover">
+            <p>от 1200 руб/м²</p>
+          </div>
+        </div>
+        <div class="price-block scaler">
+          <p class="head">Индивидуальный проект</p>
+          <hr />
+          <p class="body">
+            <span style="color: #8c947d">➤</span> Выезд на обмер помещения<br />
+            <span style="color: #8c947d">➤</span> Четыре планировочных
+            решения<br />
+            <span style="color: #8c947d">➤</span> Эскизы и коллажи<br />
+            <span style="color: #8c947d">➤</span> 3D-визуализация всех комнат<br />
+            <span style="color: #8c947d">➤</span> Чертежи (18 - 25 шт.)<br />
+            <span style="color: #8c947d">➤</span> Спецификация отделочных
+            материалов и мебели<br />
+            <span style="color: #8c947d">➤</span> Два комплекта чертежей для
+            строителей
+          </p>
+          <div class="button nohover">
+            <p>от 2000 руб/м²</p>
+          </div>
+        </div>
+        <div class="price-block scaler" style="margin-right: 0px">
+          <p class="head">
+            Авторский<br />
+            надзор
+          </p>
+          <hr />
+          <p class="body">
+            <span style="color: #8c947d">➤</span> Дизайн проект (эскизы,
+            коллажи, визуализации, комплект чертежей)<br />
+            <span style="color: #8c947d">➤</span> Полное управление проектом<br />
+            <span style="color: #8c947d">➤</span> Комплектация отделочными
+            материалами<br />
+            <span style="color: #8c947d">➤</span> Все ремонтно-отделочные работы
+            на объекте<br />
+            <span style="color: #8c947d">➤</span> Взаимодействие со сторонними
+            организациями<br />
+            <span style="color: #8c947d">➤</span> Финансовая отчетность<br />
+          </p>
+          <div class="button nohover">
+            <p>от 3700 руб/м²</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="logotype-text reveal"
+        style="width: 100%; margin: auto; text-align: left; margin: 5% 0%"
+        id="price"
+      >
+        <h1 style="line-height: 0">3</h1>
+
+        <h2 style="line-height: 0.25; margin-left: 6%">аполните</h2>
+      </div>
+
+      <div class="row indent reveal">
+        <div class="column">
+          <div class="sel">
+            <select class="select" id="selecthouse">
+              <option value="" disabled selected>Тип помещения</option>
+              <option value="Квартира">Квартира</option>
+              <option value="Дом">Дом</option>
+              <option value="Офис">Офис</option>
+            </select>
+          </div>
+          <div class="sel">
+            <select class="select" id="selectproject">
+              <option value="" disabled selected>Цель проекта</option>
+              <option value="Обновление">Обновление</option>
+              <option value="Ремонт">Ремонт</option>
+              <option value="Улучшение функциональности">
+                Улучшение функциональности
+              </option>
+            </select>
+          </div>
+          <div class="sel">
+            <select class="select" id="selectcity">
+              <option value="" disabled selected>Город объекта</option>
+              <option value="СПБ">СПБ</option>
+              <option value="МСК">МСК</option>
+            </select>
+          </div>
+          <div class="sel">
+            <select class="select" id="selectmoney">
+              <option value="" disabled selected>
+                Бюджет на дизайн-проект
+              </option>
+              <option value="60">До 60 тыс/руб</option>
+              <option value="100">До 100 тыс/руб</option>
+              <option value="150">От 150 тыс/руб</option>
+            </select>
+          </div>
+        </div>
+        <div class="column" style="margin-left: 30px">
+          <div class="row sel">
+            <input
+              class="select"
+              style="cursor: auto"
+              type="text"
+              placeholder="Площадь объекта"
+              id="objectarea"
+            />
+            <img
+              src="images/draw-square.png"
+              style="height: 13px; margin: auto"
+            />
+          </div>
+          <div class="row sel">
+            <input
+              class="select"
+              style="cursor: auto"
+              type="text"
+              placeholder="Ваше имя"
+              id="applicationname"
+            />
+            <img src="images/user.png" style="height: 13px; margin: auto" />
+          </div>
+          <div class="row sel">
+            <input
+              class="select"
+              style="cursor: auto"
+              type="tel"
+              placeholder="Телефон"
+              id="applicationphone"
+            />
+            <img src="images/phone.png" style="height: 13px; margin: auto" />
+          </div>
+          <div
+            class="button"
+            style="width: 100%; margin-top: 15px; height: 76px"
+          >
+            <div class="row" onclick="sendapplication()">
+              <p>Отправить заявку</p>
+              <span class="the-arrow -right" style="margin: auto; width: 30%">
+                <span class="shaft"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row indent" id="contacts">
+        <div class="column">
+          <div class="row" style="margin-bottom: 20px">
+            <img
+              src="images/phone.png"
+              style="height: 20px; margin: auto 20px auto 0px"
+            />
+            <p>+7(999)000-00-00</p>
+          </div>
+          <div class="row" style="margin-bottom: 20px">
+            <img
+              src="images/refresh.png"
+              style="height: 20px; margin: auto 20px auto 0px"
+            />
+            <p>с 8:00 до 20:00</p>
+          </div>
+          <div class="row">
+            <img
+              src="images/mail.png"
+              style="height: 20px; margin: auto 20px auto 0px"
+            />
+            <p>info@dumkoev.ru</p>
+          </div>
+        </div>
+
+        <img
+          src="./images/logob.svg"
+          onclick="location.href='Index.html'"
+          style="margin: 0 17% 0 0"
+        />
+
+        <div class="column" style="max-width: 400px">
+          <div class="row" style="margin-bottom: auto">
+            <img
+              src="images/instagram.png"
+              class="media"
+              style="margin-left: 0px"
+            />
+            <img src="images/telegram.png" class="media" />
+            <img src="images/vk.png" class="media" />
+            <img
+              src="images/behance.png"
+              class="media"
+              style="margin-right: 0px"
+            />
+          </div>
+          <div
+            style="padding: 5% 0 5% 35%; align-items: center; gap: 2%"
+            class="button"
+            onclick="location.href='#start'"
+          >
+            <p>Наверх</p>
+
+            <img
+              style="padding-right: 60%"
+              src="./images/arrowtop.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
