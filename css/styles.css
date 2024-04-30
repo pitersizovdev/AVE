@@ -489,3 +489,19 @@ a.effect-shine:hover {
   max-width: 900px;
   font-size: 2.5rem;
 }
+.prime-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.prime {
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 1.5% 3%;
+  margin: 0 1%;
+}
+.bold1 {
+  font-family: "ZTBold";
+}
