@@ -59,6 +59,10 @@ h2 {
   font-weight: 400;
   font-size: 5rem;
 }
+h3 {
+  font-family: LatoBold;
+  font-size: 2.5rem;
+}
 * {
   font-family: LatoRegular;
   font-weight: 400;
@@ -464,4 +468,24 @@ a.effect-shine:hover {
 .about-p {
   font-family: Latolight;
   font-weight: 300;
+}
+.stages {
+  display: flex;
+  padding: 0% 8%;
+
+  flex-direction: column;
+}
+.stage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.stage p {
+  max-width: 1000px;
+  font-size: 2rem;
+  font-family: LatoLight;
+}
+.stage h3 {
+  max-width: 900px;
+  font-size: 2.5rem;
 }
