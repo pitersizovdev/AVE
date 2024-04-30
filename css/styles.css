@@ -129,12 +129,6 @@ html {
 .project-hover {
   margin-bottom: 20px;
   margin-right: 20px;
-  filter: brightness(80%);
-  transition: all 0.5s;
-}
-
-.project-hover:hover {
-  filter: brightness(110%);
 }
 
 .project-container {
@@ -142,11 +136,11 @@ html {
   color: white;
 }
 .project-container .head {
-  font-size: 18px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 .project-container .body {
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 100;
 }
 .header {
