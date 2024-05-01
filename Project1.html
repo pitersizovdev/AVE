@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ave</title>
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body>
+    <div class="content" id="start">
+      <div class="row indent">
+        <div class="header" style="padding-left: 0px">
+          <img
+            id="displaynone"
+            src="./images/logow.svg"
+            class="image-fit"
+            style="margin-left: 5%"
+            onclick="location.href='Index.html'"
+          />
+        </div>
+        <div class="header" id="displaynone"></div>
+        <img
+          id="displayblock"
+          src="./images/logob.svg"
+          class="image-fit"
+          onclick="location.href='Index.html'"
+        />
+        <div class="header">
+          <div style="margin-left: 0px">
+            <a  class="effect-underline" href="About.html"
+              >о студии</a
+            >
+          </div>
+          <div>
+            <a
+            
+              class="effect-underline"
+              href="./Projects.html"
+              >проекты</a
+            >
+          </div>
+          <div>
+            <a
+          
+              class="effect-underline"
+              href="Index.html#price"
+              >стоимость</a
+            >
+          </div>
+          <div>
+            <a
+        
+              class="effect-underline"
+              href="About.html#projects"
+              >этапы работы</a
+            >
+          </div>
+          <div style="margin-right: 0px">
+            <a
+          
+              class="effect-underline"
+              href="Index.html#contacts"
+              >контакты</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="row indent">
+        <div
+          class="image-fit"
+          style="
+            background-image: url('images/hp1.png');
+            width: 100%;
+            height: 1000px;
+            position: relative;
+            margin-top: -15%;
+            z-index: -99;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <h4
+            style="
+              position: absolute;
+              bottom: 50%;
+              color: white;
+              margin: 0 auto;
+            "
+          >
+            ЖК «На Никитина»
+          </h4>
+          <h5
+            style="
+              position: absolute;
+              bottom: 5%;
+              color: white;
+              margin: 0 auto;
+              text-align: center;
+            "
+          >
+            локация: г.Новосибирск <br />год: 2023 <br />площадь: 63 кв.м.
+          </h5>
+        </div>
+      </div>
+
+      <div class="row1 indent" id="contacts">
+        <div class="column">
+          <div class="row1" style="margin-bottom: 20px">
+            <img
+              src="images/phone.png"
+              style="height: 20px; margin: auto 20px auto 0px"
+            />
+            <p>+7(999)000-00-00</p>
+          </div>
+          <div class="row1" style="margin-bottom: 20px">
+            <img
+              src="images/refresh.png"
+              style="height: 20px; margin: auto 20px auto 0px"
+            />
+            <p>с 8:00 до 20:00</p>
+          </div>
+          <div class="row1">
+            <img
+              src="images/mail.png"
+              style="height: 20px; margin: auto 20px auto 0px"
+            />
+            <p>info@dumkoev.ru</p>
+          </div>
+        </div>
+
+        <img
+          src="./images/logob.svg"
+          onclick="location.href='Index.html'"
+          id="footerlogo"
+        />
+
+        <div class="column" style="max-width: 400px">
+          <div class="row1" style="margin-bottom: auto">
+            <img
+              src="images/instagram.png"
+              class="media"
+              style="margin-left: 0px"
+            />
+            <img src="images/telegram.png" class="media" />
+            <img src="images/vk.png" class="media" />
+            <img
+              src="images/behance.png"
+              class="media"
+              style="margin-right: 0px"
+            />
+          </div>
+          <div class="button" onclick="location.href='#start'">
+            <p>Наверх</p>
+
+            <img
+              id="displaynone"
+              style="padding-right: 30%"
+              src="./images/arrowtop.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

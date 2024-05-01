@@ -63,6 +63,14 @@ h3 {
   font-family: LatoBold;
   font-size: 2.5rem;
 }
+h4 {
+  font-family: LatoBold;
+  font-size: 4.5rem;
+}
+h5 {
+  font-family: LatoRegular;
+  font-size: 1.5rem;
+}
 * {
   font-family: LatoRegular;
   font-weight: 400;
@@ -339,6 +347,7 @@ html {
 
 a.effect-underline {
   position: relative;
+  color: white;
 }
 
 a.effect-underline:after {
@@ -529,6 +538,9 @@ a.effect-shine:hover {
   line-height: 0.25;
   margin-left: 18%;
 }
+#displayblock {
+  display: none;
+}
 #raboty1 {
   width: 100%;
   margin: auto;
@@ -673,5 +685,15 @@ a.effect-shine:hover {
   #zapoln1 {
     line-height: 0.25;
     margin-left: 18%;
+  }
+  #displayblock {
+    display: block;
+    margin: 0 auto 5% auto;
+    width: 40%;
+    padding: 2%;
+  }
+  a.effect-underline {
+    position: relative;
+    color: black;
   }
 }
