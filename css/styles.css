@@ -587,6 +587,85 @@ a.effect-shine:hover {
   margin-right: -8%;
 }
 
+/* DESIGN PURPOSE */
+
+/* REQUIRED TO MAKE IT WORK */
+:root {
+  --input-position: 50%;
+}
+.contentslider {
+  position: relative;
+}
+.images-container {
+  position: relative;
+  width: 1350;
+  height: 1000px;
+  overflow: hidden;
+}
+.images-container > .figure {
+  margin: 0;
+}
+.images-container > #before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--input-position);
+  height: 100%;
+  overflow: hidden;
+}
+.cursor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: var(--input-position);
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 3rem;
+  height: 100%;
+}
+.cursor-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+.cursor-circle::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: white;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+.cursor-circle > svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: rotate(90deg);
+}
+#value {
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  opacity: 0;
+  cursor: pointer;
+}
+#value::-webkit-slider-thumb {
+  appearance: none;
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1300px) {
   .row {
     flex-direction: column;

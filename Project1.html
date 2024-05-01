@@ -40,41 +40,21 @@
         />
         <div class="header">
           <div style="margin-left: 0px">
-            <a  class="effect-underline" href="About.html"
-              >о студии</a
-            >
+            <a class="effect-underline" href="About.html">о студии</a>
           </div>
           <div>
-            <a
-            
-              class="effect-underline"
-              href="./Projects.html"
-              >проекты</a
-            >
+            <a class="effect-underline" href="./Projects.html">проекты</a>
           </div>
           <div>
-            <a
-          
-              class="effect-underline"
-              href="Index.html#price"
-              >стоимость</a
-            >
+            <a class="effect-underline" href="Index.html#price">стоимость</a>
           </div>
           <div>
-            <a
-        
-              class="effect-underline"
-              href="About.html#projects"
+            <a class="effect-underline" href="About.html#projects"
               >этапы работы</a
             >
           </div>
           <div style="margin-right: 0px">
-            <a
-          
-              class="effect-underline"
-              href="Index.html#contacts"
-              >контакты</a
-            >
+            <a class="effect-underline" href="Index.html#contacts">контакты</a>
           </div>
         </div>
       </div>
@@ -114,6 +94,63 @@
           >
             локация: г.Новосибирск <br />год: 2023 <br />площадь: 63 кв.м.
           </h5>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="contentslider">
+          <div class="images-container">
+            <figure
+              class="figure"
+              id="before"
+              style="background-image: url(/images/sp1.png)"
+            >
+              <img
+                src="/images/sp1.png"
+                alt="before"
+                class="image"
+                style="opacity: 0"
+              />
+            </figure>
+            <figure
+              class="figure"
+              id="after"
+              style="background-image: url(/images/sp12.png)"
+            >
+              <img
+                src="/images/sp12.png"
+                alt="after"
+                class="image"
+                style="opacity: 0"
+              />
+            </figure>
+          </div>
+          <div class="cursor">
+            <div class="cursor-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                />
+              </svg>
+            </div>
+          </div>
+          <input
+            type="range"
+            id="value"
+            name="value"
+            min="0"
+            max="100"
+            value="50"
+          />
         </div>
       </div>
 
@@ -177,4 +214,14 @@
       </div>
     </div>
   </body>
+  <script>
+    const range = document.getElementById("value");
+
+    range.addEventListener("input", (event) => {
+      document.documentElement.style.setProperty(
+        "--input-position",
+        range.value + "%"
+      );
+    });
+  </script>
 </html>
