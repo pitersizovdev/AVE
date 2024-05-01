@@ -118,6 +118,7 @@ html {
 .row1 {
   display: flex;
   flex-direction: row;
+
   width: 100%;
 }
 .column {
@@ -219,7 +220,7 @@ html {
   font-weight: 500;
 }
 .button:hover {
-  background-color: black;
+  background-color: #84916d;
   color: white;
 }
 .nohover {
@@ -347,9 +348,12 @@ html {
 
 a.effect-underline {
   position: relative;
+  color: #000;
+}
+a.effect-underline1 {
+  position: relative;
   color: white;
 }
-
 a.effect-underline:after {
   content: "";
   position: absolute;
@@ -445,8 +449,8 @@ a.effect-shine:hover {
   margin: auto;
   transition: 0.5s all ease;
 }
-.media:hover {
-  filter: brightness(200%);
+.media:hover svg path {
+  fill: #84916d;
 }
 .scaler {
   transition: 0.5s all ease;
@@ -586,86 +590,20 @@ a.effect-shine:hover {
   line-height: 2.2;
   margin-right: -8%;
 }
+/***************************/
 
-/* DESIGN PURPOSE */
-
-/* REQUIRED TO MAKE IT WORK */
-:root {
-  --input-position: 50%;
-}
-.contentslider {
-  position: relative;
-}
-.images-container {
-  position: relative;
-  width: 1350;
-  height: 1000px;
-  overflow: hidden;
-}
-.images-container > .figure {
-  margin: 0;
-}
-.images-container > #before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: var(--input-position);
-  height: 100%;
-  overflow: hidden;
-}
-.cursor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: var(--input-position);
-  transform: translateX(-50%);
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 3rem;
-  height: 100%;
-}
-.cursor-circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-}
-.cursor-circle::before {
-  content: "";
-  width: 2px;
-  height: 100%;
-  background: white;
-  position: absolute;
-  inset: 0;
-  margin: auto;
-}
-.cursor-circle > svg {
-  width: 2.5rem;
-  height: 2.5rem;
-  transform: rotate(90deg);
-}
-#value {
+/***************************/
+.image-gallery {
   width: 100%;
-  position: absolute;
-  inset: 0;
-  background-color: transparent;
-  opacity: 0;
-  cursor: pointer;
-}
-#value::-webkit-slider-thumb {
-  appearance: none;
-  background-color: white;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5%;
+  margin: 0.5% 0;
 }
 
+.image-gallery img {
+  max-width: 100%;
+}
 @media only screen and (max-width: 1300px) {
   .row {
     flex-direction: column;
@@ -722,6 +660,9 @@ a.effect-shine:hover {
     padding: 25px 8px 25px 8px;
     margin-bottom: 25px;
   }
+  .effect-underline1 {
+    font-size: 1.5rem;
+  }
   .effect-underline {
     font-size: 1.5rem;
   }
@@ -771,7 +712,7 @@ a.effect-shine:hover {
     width: 40%;
     padding: 2%;
   }
-  a.effect-underline {
+  a.effect-underline1 {
     position: relative;
     color: black;
   }
