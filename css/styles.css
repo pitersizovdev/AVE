@@ -81,6 +81,10 @@ html {
   background-color: #fef9f3;
   font-size: 16px;
 }
+.toptext1 {
+  display: flex;
+  gap: 1%;
+}
 .toptext {
   display: flex;
   gap: 1%;
@@ -546,6 +550,22 @@ a.effect-shine:hover {
   width: 70%;
   height: 750px;
 }
+#footerup {
+  padding: 5% 0 5% 50%;
+  align-items: center;
+  gap: 2%;
+}
+.bottomtext {
+  color: #000;
+  margin-right: 12.5%;
+}
+.bottomtext h1 {
+  line-height: 1;
+}
+.bottomtext h2 {
+  line-height: 2.2;
+  margin-right: -8%;
+}
 
 @media only screen and (max-width: 1300px) {
   .row {
@@ -586,6 +606,13 @@ a.effect-shine:hover {
     margin: 0 5% 0 0;
     width: 25%;
   }
+  #footerup {
+    align-items: center;
+    gap: 2%;
+    justify-content: center;
+    display: flex;
+  }
+
   #studio {
     margin-top: 15%;
   }
@@ -613,5 +640,22 @@ a.effect-shine:hover {
   #project2 {
     height: 1000px;
     width: 100%;
+  }
+
+  .toptext {
+    margin: -100% 0 100% 0;
+  }
+  #stud {
+    color: white;
+  }
+  .bottomtext {
+    margin: -100% 0% 70% 55%;
+  }
+  .bottomtext h1 {
+    line-height: 1;
+  }
+  .bottomtext h2 {
+    line-height: 2.2;
+    margin-right: -5%;
   }
 }
