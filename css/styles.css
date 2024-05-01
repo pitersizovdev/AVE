@@ -97,6 +97,10 @@ html {
   display: flex;
   gap: 1%;
 }
+.toptext11 {
+  display: flex;
+  gap: 1%;
+}
 .bottomtext {
   display: flex;
   gap: 1%;
@@ -540,7 +544,7 @@ a.effect-shine:hover {
 }
 #raboty {
   line-height: 0.25;
-  margin-left: 18%;
+  margin-left: 8%;
 }
 #displayblock {
   display: none;
@@ -550,6 +554,16 @@ a.effect-shine:hover {
   margin: auto;
   text-align: left;
   margin: 3% 0%;
+}
+#raboty11 {
+  line-height: 0.25;
+  margin-left: 17%;
+}
+
+#ab {
+  font-size: 8rem;
+  line-height: 2;
+  margin-top: 2%;
 }
 #footerlogo {
   margin: 0 17% 0 0;
@@ -595,7 +609,7 @@ a.effect-shine:hover {
   position: relative;
   overflow: hidden;
   display: inline-block;
-  margin: 0 auto 6% auto; 
+  margin: 0 auto 6% auto;
 }
 
 .product-image img {
@@ -749,4 +763,5 @@ a.effect-shine:hover {
     position: relative;
     color: black;
   }
+
 }
