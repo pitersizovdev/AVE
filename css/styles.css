@@ -591,6 +591,38 @@ a.effect-shine:hover {
   margin-right: -8%;
 }
 /***************************/
+.product-image {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 auto 6% auto; 
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.product-image a {
+  position: relative;
+  display: block;
+}
+
+.product-image img + img {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product-image:hover img + img {
+  opacity: 1;
+}
 
 /***************************/
 .image-gallery {
@@ -604,6 +636,7 @@ a.effect-shine:hover {
 .image-gallery img {
   max-width: 100%;
 }
+
 @media only screen and (max-width: 1300px) {
   .row {
     flex-direction: column;

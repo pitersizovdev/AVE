@@ -3,10 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="utf-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=f609a2fa-07ce-11ef-9396-d93975fe8866"
-    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -101,14 +98,12 @@
         </div>
       </div>
 
-      <iframe
-        style="margin: 0 auto"
-        frameborder="0"
-        class="juxtapose"
-        width="90%"
-        height="999"
-        src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=f609a2fa-07ce-11ef-9396-d93975fe8866"
-      ></iframe>
+      <figure class="product-image">
+        <a href="#">
+          <img src="/images/p1/1s.png">
+          <img src="/images/p1/2s.png">
+        </a>
+      </figure>
 
       <div class="image-gallery">
         <img style="width: 33%" src="/images/p1/p119.png" alt="" />
@@ -299,12 +294,5 @@
       </div>
     </div>
   </body>
-  <script>
-    const slider = document.getElementById("slider");
-    slider.addEventListener("input", function () {
-      const frontImage = document.querySelector(".front-img");
-      // Change the front image's clip-path based on range input's value
-      frontImage.style.clipPath = `polygon(0 0, ${this.value}% 0, ${this.value}% 100%, 0% 100%)`;
-    });
-  </script>
+  <script></script>
 </html>
